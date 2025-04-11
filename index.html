@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root">
+    </div>
+<script>
+  const  heading= React.createElement('h1',
+  {id:'heading', className:"heading" },   
+   React.createElement('h2',{id:'child'}, 
+
+   [React.createElement('h2',{id:'child1'}, 'Child 111111'), React.createElement('h2',{id:'child2' }, 'Child 22222')]
+)  
+)
+  const root= ReactDOM.createRoot(document.getElementById('root'))
+  root.render(heading)
+  console.log(heading)
+</script>
+
+</body>
+</html>
